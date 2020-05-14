@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link type="image/png" href="images/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+
+  <script>
+  
+  function showContent(val){
+  
+	  Array.from(document.getElementsByClassName('Content')).forEach(el  => el.style.display = 'none');
+	  document.getElementById(val + 'Content').style.display = 'block';
+	  document.getElementById(val + 'Content').scrollIntoView();
+  
+  }
+  </script>
+  
+</head>
+<body>
+
+<header>
+
+<img src='images/me1.jpg'>
+	<h1>Mary Baghdasaryan</h1>
+	
+	
+</header>
+
+
+
+<div id='blocks'>
+
+	<div id='storyBlock' onclick='showContent("story")'>
+			<h1>Моя история</h1>
+			<h2>Или что сделало меня мной</h2>
+			<img src='images/story.jpg' >
+	</div>
+
+	<div id='goalsBlock' onclick='showContent("goals")'>
+		<h1>Куда я иду</h1>
+		<h2>И причём тут бабочка</h2>
+		<img src='images/goals.jpg' >
+	</div>
+
+	<div id='nutritionBlock'>
+		<h1>Что я ем</h1>  
+		<h2>И почему это важно</h2> 
+		<img src='images/nutrition2.jpg' onclick='showContent("nutrition")'>
+	</div>
+
+</div>
+<div id='content'>
+
+	<div id='storyContent' class='Content'>
+
+		<p>
+			<span class='arm'>Ես ծնվել և մինչև 11 տարեկան ապրել եմ Երևանում։ Հետո իմ ընտանիքը տեղափողվել է Մոսկվա։</span>
+			И в один миг изменилось всё. Среда, окружение, язык, на котором нужно было говорить и желательно ещё и думать. 
+			Я окончила школу, затем институт. Получила диплом экономиста и устроилась на работу.  Вот тут-то всё и началось. 
+			Если школа и институт были явлениями временными с точными сроками окончания, то работа это уже совсем другая история. 
+			За 3 года я 3 раза поменяла работу. <br>
+			1. В Смарт Про я работала менеджером по заказам. <br>
+			2. В <a href='https://ameria.ru/' target='blank'>Америа Русс</a> работала аналитиком, 
+			где научилась программе Excel, в том числе писать макросы, и полюбила программирование.<br>
+			3. В <a href='https://svyaz.transneft.ru/' target='blank'>Связьтранснефти</a> работала в ИТ департаменте и занималась бюджетированием. 
+			Параллельно начала изучать web программирование и как создавать сайты с помощью CMS.<br>
+			За 3 года рабочий ритм города, масштабы, пробки и вся эта угнетающая суета настолько давили на меня, что я вернулась в Ереван.
+			<span class='arm'>Ընդունվել եմ աշխատանքի <a href='https://www.ardshinbank.am/' target='blank'><img src="images/logo.png" style='height:37px; margin-bottom: -15px'><a> 
+			սկզբում քարտային բաժին, հետո տեղափոխվել եմ HR, այնուհետև IT, որտեղ զբաղվում էի ներքին քարտային ծրագրի զարգացմամբ և սպասարկմամբ։ 5 տարի հետո տեղափոխվել եմ 		
+			<a href='https://www.ucom.am/' target='blank'><img src="images/ucom.png" style='height:65px; margin-bottom: -25px'><a>
+			
+			
+			</span>
+			
+		</p>
+		<img src="images/up-arrow.png" class="up-arrow" onclick='window.location.reload(true)'>
+	</div>
+
+	<div id='goalsContent' class='Content'>
+
+		<p>	
+			Вопреки негативной ассоциации, которая бытует в армянском обществе, бабочка символ <b>Трансформации</b>. Причём трансформации грандиозной.
+			Как неприглядное, умеющее только ползать, существо благодаря своей природной магии обретает сказочно красивые крылья и способность летать. 
+			Ведь гусеница даже не представляет, кем ей суждено стать. И в этом кроется вся уникальность бабочки.<br/>
+			В нас, в людях, тоже заложен огромный потенциал, который каждый должен в себе раскрыть. 
+			А сделать это можно только следуя своей природе, прислушиваясь к себе, бросая себе вызов, преодлевая трудности и развиваясь. 
+			И лишь тогда вырастут крылья.<br/>
+			Для меня нет ничего более увлекательного, чем учиться чему-то новому, познавать мир и себя. 
+			А помогают мне в этом книги и медитации. Вот, например, несколько расширяющих сознания книг, которые я прочла за последний год.
+		</p>
+		<img src="images/up-arrow.png" align="center" class="up-arrow" onclick='window.location.reload(true)'>
+	</div>
+
+	<div id='nutritionContent' class='Content'>
+		
+		<p>
+			И снова тут слово на букву Т. Да, питание - это тоже <b>трансформация</b>, вот только уже пищи в энергию. Но есть ещё один важный аспект. 
+			Помимо витаминов, минералов и микроэлементов необходимых для поддержания здоровья, любая пища имеет свою частоту вибрации, которая действует на сознание. 
+			Я много экспериментировала и в итоге исключила из своего рациона мясо, пшеничную муку и рафинированный сахар. 
+			Мясо имеет очень низкие вибрации, поэтому не может повышать уровень сознания.  А то, что якобы только в мясе содержатся незаменимые для организма аминокислоты, давным давно опровергнуто учёными. 
+			Вегетарианцы есть среди выдающихся философов, учёных, писателей и т.д.
+			Пшеничная мука и сахар вредны тем, что вызывают углеводную зависимость. То, что сродни с наркотиком, пользу нести не может. Вот и вся моя концепция о питании. 
+			А вот, что я ем, можно увидеть <a href='https://www.instagram.com/your.mindful.nutrition/' target='blank'>в моем профиле в Инстаграм</a>, куда я выкладываю то, что готовлю и делюсь рецептами.
+		</p>
+		<img src="images/up-arrow.png" class="up-arrow" onclick='window.location.reload(true)'>
+	</div>
+
+</div>
+<footer>
+	<div id='smi'>
+		<a href='https://www.facebook.com/mary.bage.14' target='blank'><img src='images/Facebook2.png'></a>
+		<a href='https://www.instagram.com/your.mindful.nutrition/' target='blank'><img src='images/Instagram2.png'></a>
+	</div>
+</footer>
+</body>
+
+</html>
