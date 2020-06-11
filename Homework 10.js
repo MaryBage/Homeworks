@@ -33,9 +33,7 @@ class Author {
 	}
 	
 	toString(){
-		
 		return `Name: ${this.name}\nEmail: ${this.email}\nGender: ${this.gender}`;
-		
 	}
 	
 }
@@ -66,7 +64,6 @@ class Book {
 			this._author = v;
 		else
 			 console.log('Invalid Author');
-			
 	}
 	
 	get price(){
@@ -100,10 +97,10 @@ let author1 = new Author('Joe Dispenza', 'joe@dispenza.com', 'Male');
 console.log(author1);
 
 let author2 = {
-				name : 'Carol Dweck',
-				email: 'carol@dweck.com',
-				gender: 'Female'
-			}
+		name : 'Carol Dweck',
+		email: 'carol@dweck.com',
+		gender: 'Female'
+	}
 
 console.log(author2);
 
@@ -118,7 +115,6 @@ let book2 = new Book('Growth mindset', author2, 7000, 25);
 console.log(book1.getProfit());
 
 console.log(book1.toString());
-
 
 
 /* 2. Create an Account class. Account should have: id, name, balance.*/
@@ -248,19 +244,15 @@ class Person {
 	get age(){
 		return this._age;
 	}
-	
 	set firstName(v){
 		this._firstName = v;
 	}
-	
 	set lastName(v){
 		this._lastName = v;
 	}
-	
 	set gender(v){
 		this._gender = v;
 	}
-	
 	set age(v){
 		this._age = v;
 	}
@@ -288,7 +280,6 @@ class Student extends Person{
 	get fee(){
 		return this._fee;
 	}
-	
 	set program(v){
 		this._program = [...v];
 		this.data = this._program.reduce((o, key) => ({ ...o, [key]: 0}), {})
@@ -299,12 +290,10 @@ class Student extends Person{
 	set fee(v){
 		this._fee = v;
 	}
-	
 	passExam(program, grade) {
 		this.data[program] = grade;
 		this.year += Object.values(this.data).every(el => el >= 50);
 	}
-	
 	toString(){
 		return `Name: ${this.firstName} ${this.lastName}\nGender: ${this.gender}\nAge:${this.age}\nPrograms: ${this.program}\nYear: ${this.year}\nFee: ${this.fee}`;
 	}
@@ -323,15 +312,12 @@ class Teacher extends Person{
 	get pay(){
 		return this._pay;
 	}
-	
 	set program(v){
 		this._program = v;
 	}
 	set pay(v){
 		this._pay = v;
 	}
-	
-	
 	toString(){
 		return `Name: ${this.firstName} ${this.lastName}\nGender: ${this.gender}\nAge: ${this.age}\nProgram: ${this.program}\nPay: ${this.pay}`;
 	}
@@ -341,7 +327,6 @@ class Teacher extends Person{
 let student1 = new Student(['John', 'Doe', 'Male', '19'], ['Mathematics','Physics','Biology'], 2020, 450000);
 
 let teacher1 = new Teacher(['Jane', 'Smith', 'Female', '27'], 'Biology', 250000 );
-
 
 student1.passExam('Mathematics', 92);
 student1.passExam('Physics', 68);
