@@ -7,35 +7,27 @@ class Author {
 		this.email = email;
 		this.gender = gender;
 	}
-
 	get name(){
 		return this._name;
 	}
-	
 	set name(v){
 		this._name = v;
 	}
-	
 	get email(){
 		return this._email;
 	}
-	
 	set email(v){
 		this._email = v;
 	}
-	
 	get gender(){
 		return this._gender;
 	}
-	
 	set gender(v){
 		this._gender = v;
 	}
-	
 	toString(){
 		return `Name: ${this.name}\nEmail: ${this.email}\nGender: ${this.gender}`;
 	}
-	
 }
 
 class Book {
@@ -46,50 +38,40 @@ class Book {
 		this.price = price;
 		this.quantity = quantity;
 	}
-	
 	get title(){
 		return this._title;
 	}
-	
 	set title(v){
 		this._title = v;
 	}
-	
 	get author(){
 		return this._author;
 	}
-	
 	set author(v){
 		if(v instanceof Author)
 			this._author = v;
 		else
 			 console.log('Invalid Author');
 	}
-	
 	get price(){
 		return this._price;
 	}
-	
 	set price(v){
 		this._price = v;
 	}
-	
 	get quantity(){
 		return this._quantity;
 	}
-	
 	set quantity(v){
 		this._quantity = v;
 	}
-	
 	getProfit() {
 		return this.price*this.quantity;
 	}
-	
 	toString(){
 		return `Title: ${this.title}\nAuthor: ${this.author.name}\nPrice: ${this.price}\nQuantity: ${this.quantity}`;
 	}
-	
+
 }
 
 let author1 = new Author('Joe Dispenza', 'joe@dispenza.com', 'Male');
@@ -141,12 +123,10 @@ class Account {
 	set balance(v){
 		this._balance = v;
 	}
-	
 	credit(amount) {
 		this.balance +=amount; 
 		return this.balance;
 	}
-	
 	debit(amount) {
 		if(amount < this.balance){
 			this.balance -=amount; 
@@ -155,7 +135,6 @@ class Account {
 		else 
 			console.log('Amount exceeded balance.')
 	}
-	
 	transferTo(anotherAccount, amount){
 		if(anotherAccount instanceof Account){
 			if(amount < this.balance){
@@ -171,7 +150,6 @@ class Account {
 			 console.log('Invalid Account for transfer');
 		
 	}
-	
 	static identifyAccounts(accountFirst, accountSecond){
 		
 		if(accountFirst instanceof Account && accountSecond instanceof Account){
@@ -192,7 +170,6 @@ class Account {
 		else
 			console.log('Invalid Accounts');
 	}
-	
 	toString(){
 		return `ID: ${this.id}\nName: ${this.name}\nBalance: ${this.balance}`;
 	}
